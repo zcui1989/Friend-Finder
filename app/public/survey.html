@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container form-container">   
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name here...">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Photo URL</label>
+                        <input type="text" class="form-control" id="photo" placeholder="http...">
+                    </div>
+                    <hr>
+    
+                    <div class="form-group">
+                        <label for="q0">I enjoy meeting new people.</label>
+                        <select class="form-control" id="q0">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="q1">I usually conceal my feelings.</label>
+                        <select class="form-control" id="q1">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="q2">I would rather spend a quiet evening at home than go out to a party.</label>
+                        <select class="form-control" id="q2">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="q3">When I make plans, I am almost certain to make them work.</label>
+                        <select class="form-control" id="q3">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="q4">I would like more challenging things to do in life.</label>
+                        <select class="form-control" id="q4">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="q5">In situations where I have to wait, such as a line, I get very restless.</label>
+                        <select class="form-control" id="q5">
+                            <option value=""></option>
+                            <option value="1">Strongly Disagree</option>
+                            <option value="2">Disagree</option>
+                            <option value="3">Not Sure</option>
+                            <option value="4">Agree</option>
+                            <option value="5">Strongly Agree</option>
+                        </select>
+                    </div>
+    
+    
+                    <button type="submit" class="btn btn-primary" id="submit">Submit Survey</button>
+                </form>
+        </div>       
+    </div>
+
+        <div class="modal" id="modal-container" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            </div>
+            <div class="modal-body">
+                <h4 id="friend-name"></h4>
+                <img id="friend-photo" src="">
+                <p id="error-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="close-btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -10,7 +10,6 @@ module.exports = (app) => {
         var totalDifference = 0,
             matchingFriends = {
                 name : '',
-                photo : '',
                 friendsDifference : 1000
             },
 
@@ -24,7 +23,6 @@ module.exports = (app) => {
 
             userData = {
                 name : request.body.name,
-                photo : request.body.photo,
                 scores : convertedScores
             }
 
@@ -39,7 +37,6 @@ module.exports = (app) => {
 
             if (totalDifference <= matchingFriends.friendsDifference){
                 matchingFriends.name = friendsData[x].name; 
-                matchingFriends.photo = friendsData[x].photo; 
                 matchingFriends.friendsDifference = totalDifference;
             } 
         }
